@@ -24,10 +24,9 @@ class MoneyListTableViewController: UITableViewController{
     }
     
     
-    // https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=y6rBjV1m8HoXso6APfx7F2BWAWLA89Up&data=AP01
-    private func setup(){
+        private func setup(){
         
-        let url = URL(string: "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=y6rBjV1m8HoXso6APfx7F2BWAWLA89Up&data=AP01")!
+        let url = URL(string: "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=your_Key&data=AP01")!
         WebService().getMoney(url: url){
             (money) in
             
