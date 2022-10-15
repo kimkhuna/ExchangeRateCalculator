@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C38284828F5283000BC303C /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C38284728F5283000BC303C /* Money.swift */; };
+		6C38284A28F5299700BC303C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C38284928F5299700BC303C /* WebService.swift */; };
+		6C38284C28F52B0200BC303C /* MoneyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C38284B28F52B0200BC303C /* MoneyViewModel.swift */; };
+		6C38284E28F52D1B00BC303C /* MoneyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C38284D28F52D1B00BC303C /* MoneyListTableViewController.swift */; };
+		6C38285028F52D9200BC303C /* MoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C38284F28F52D9200BC303C /* MoneyTableViewCell.swift */; };
+		6CAAF66C28F708C500069B24 /* NLG.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF64B28F708C500069B24 /* NLG.png */; };
+		6CAAF66D28F708C500069B24 /* MYR.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF64C28F708C500069B24 /* MYR.png */; };
+		6CAAF66E28F708C500069B24 /* HKD.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF64D28F708C500069B24 /* HKD.png */; };
+		6CAAF66F28F708C500069B24 /* SEK.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF64E28F708C500069B24 /* SEK.png */; };
+		6CAAF67028F708C500069B24 /* NOK.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF64F28F708C500069B24 /* NOK.png */; };
+		6CAAF67128F708C500069B24 /* BND.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65028F708C500069B24 /* BND.png */; };
+		6CAAF67228F708C500069B24 /* FRF.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65128F708C500069B24 /* FRF.png */; };
+		6CAAF67328F708C500069B24 /* ATS.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65228F708C500069B24 /* ATS.png */; };
+		6CAAF67428F708C500069B24 /* EUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65328F708C500069B24 /* EUR.png */; };
+		6CAAF67528F708C500069B24 /* SAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65428F708C500069B24 /* SAR.png */; };
+		6CAAF67628F708C500069B24 /* JPY.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65528F708C500069B24 /* JPY.png */; };
+		6CAAF67728F708C500069B24 /* IDR.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65628F708C500069B24 /* IDR.png */; };
+		6CAAF67828F708C500069B24 /* BHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65728F708C500069B24 /* BHD.png */; };
+		6CAAF67928F708C500069B24 /* FIM.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65828F708C500069B24 /* FIM.png */; };
+		6CAAF67A28F708C500069B24 /* CAD.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65928F708C500069B24 /* CAD.png */; };
+		6CAAF67B28F708C500069B24 /* DM.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65A28F708C500069B24 /* DM.png */; };
+		6CAAF67C28F708C500069B24 /* CHF.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65B28F708C500069B24 /* CHF.png */; };
+		6CAAF67D28F708C500069B24 /* AED.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65C28F708C500069B24 /* AED.png */; };
+		6CAAF67E28F708C500069B24 /* BEF.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65D28F708C500069B24 /* BEF.png */; };
+		6CAAF67F28F708C500069B24 /* CNH.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65E28F708C500069B24 /* CNH.png */; };
+		6CAAF68028F708C500069B24 /* DKK.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF65F28F708C500069B24 /* DKK.png */; };
+		6CAAF68128F708C500069B24 /* THB.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66028F708C500069B24 /* THB.png */; };
+		6CAAF68228F708C500069B24 /* ITL.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66128F708C500069B24 /* ITL.png */; };
+		6CAAF68328F708C500069B24 /* NZD.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66228F708C500069B24 /* NZD.png */; };
+		6CAAF68428F708C500069B24 /* GBP.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66328F708C500069B24 /* GBP.png */; };
+		6CAAF68528F708C500069B24 /* ESP.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66428F708C500069B24 /* ESP.png */; };
+		6CAAF68628F708C500069B24 /* AUD.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66528F708C500069B24 /* AUD.png */; };
+		6CAAF68728F708C500069B24 /* SGD.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66628F708C500069B24 /* SGD.png */; };
+		6CAAF68828F708C500069B24 /* exchange.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66728F708C500069B24 /* exchange.png */; };
+		6CAAF68928F708C500069B24 /* ECOWAS.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66828F708C500069B24 /* ECOWAS.png */; };
+		6CAAF68A28F708C500069B24 /* KWD.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66928F708C500069B24 /* KWD.png */; };
+		6CAAF68B28F708C500069B24 /* KRW.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66A28F708C500069B24 /* KRW.png */; };
+		6CAAF68C28F708C500069B24 /* USD.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAAF66B28F708C500069B24 /* USD.png */; };
+		6CAAF68E28F70A1500069B24 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAAF68D28F70A1500069B24 /* MainViewController.swift */; };
+		6CF3441928F3CD8400D6770F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF3441828F3CD8400D6770F /* AppDelegate.swift */; };
+		6CF3441B28F3CD8400D6770F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF3441A28F3CD8400D6770F /* SceneDelegate.swift */; };
+		6CF3442028F3CD8400D6770F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF3441E28F3CD8400D6770F /* Main.storyboard */; };
+		6CF3442228F3CD8500D6770F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF3442128F3CD8500D6770F /* Assets.xcassets */; };
+		6CF3442528F3CD8500D6770F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF3442328F3CD8500D6770F /* LaunchScreen.storyboard */; };
+		A433A68E64F80BCE9F456170 /* Pods_ExchangeRateCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6744CC45C92ED8F5CA011DC /* Pods_ExchangeRateCalculator.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B0D39C1C58C950FFAA0223D /* Pods-ExchangeRateCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRateCalculator.debug.xcconfig"; path = "Target Support Files/Pods-ExchangeRateCalculator/Pods-ExchangeRateCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		6C38284728F5283000BC303C /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		6C38284928F5299700BC303C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		6C38284B28F52B0200BC303C /* MoneyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewModel.swift; sourceTree = "<group>"; };
+		6C38284D28F52D1B00BC303C /* MoneyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyListTableViewController.swift; sourceTree = "<group>"; };
+		6C38284F28F52D9200BC303C /* MoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTableViewCell.swift; sourceTree = "<group>"; };
+		6C4E49E528F8609B00429FA6 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		6C4E49E628F8609B00429FA6 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6CAAF64B28F708C500069B24 /* NLG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NLG.png; sourceTree = "<group>"; };
+		6CAAF64C28F708C500069B24 /* MYR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MYR.png; sourceTree = "<group>"; };
+		6CAAF64D28F708C500069B24 /* HKD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HKD.png; sourceTree = "<group>"; };
+		6CAAF64E28F708C500069B24 /* SEK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SEK.png; sourceTree = "<group>"; };
+		6CAAF64F28F708C500069B24 /* NOK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NOK.png; sourceTree = "<group>"; };
+		6CAAF65028F708C500069B24 /* BND.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BND.png; sourceTree = "<group>"; };
+		6CAAF65128F708C500069B24 /* FRF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRF.png; sourceTree = "<group>"; };
+		6CAAF65228F708C500069B24 /* ATS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ATS.png; sourceTree = "<group>"; };
+		6CAAF65328F708C500069B24 /* EUR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EUR.png; sourceTree = "<group>"; };
+		6CAAF65428F708C500069B24 /* SAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAR.png; sourceTree = "<group>"; };
+		6CAAF65528F708C500069B24 /* JPY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JPY.png; sourceTree = "<group>"; };
+		6CAAF65628F708C500069B24 /* IDR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IDR.png; sourceTree = "<group>"; };
+		6CAAF65728F708C500069B24 /* BHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BHD.png; sourceTree = "<group>"; };
+		6CAAF65828F708C500069B24 /* FIM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FIM.png; sourceTree = "<group>"; };
+		6CAAF65928F708C500069B24 /* CAD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAD.png; sourceTree = "<group>"; };
+		6CAAF65A28F708C500069B24 /* DM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DM.png; sourceTree = "<group>"; };
+		6CAAF65B28F708C500069B24 /* CHF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CHF.png; sourceTree = "<group>"; };
+		6CAAF65C28F708C500069B24 /* AED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AED.png; sourceTree = "<group>"; };
+		6CAAF65D28F708C500069B24 /* BEF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEF.png; sourceTree = "<group>"; };
+		6CAAF65E28F708C500069B24 /* CNH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CNH.png; sourceTree = "<group>"; };
+		6CAAF65F28F708C500069B24 /* DKK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DKK.png; sourceTree = "<group>"; };
+		6CAAF66028F708C500069B24 /* THB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = THB.png; sourceTree = "<group>"; };
+		6CAAF66128F708C500069B24 /* ITL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ITL.png; sourceTree = "<group>"; };
+		6CAAF66228F708C500069B24 /* NZD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NZD.png; sourceTree = "<group>"; };
+		6CAAF66328F708C500069B24 /* GBP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GBP.png; sourceTree = "<group>"; };
+		6CAAF66428F708C500069B24 /* ESP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ESP.png; sourceTree = "<group>"; };
+		6CAAF66528F708C500069B24 /* AUD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUD.png; sourceTree = "<group>"; };
+		6CAAF66628F708C500069B24 /* SGD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SGD.png; sourceTree = "<group>"; };
+		6CAAF66728F708C500069B24 /* exchange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exchange.png; sourceTree = "<group>"; };
+		6CAAF66828F708C500069B24 /* ECOWAS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ECOWAS.png; sourceTree = "<group>"; };
+		6CAAF66928F708C500069B24 /* KWD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KWD.png; sourceTree = "<group>"; };
+		6CAAF66A28F708C500069B24 /* KRW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KRW.png; sourceTree = "<group>"; };
+		6CAAF66B28F708C500069B24 /* USD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USD.png; sourceTree = "<group>"; };
+		6CAAF68D28F70A1500069B24 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6CF3441528F3CD8400D6770F /* ExchangeRateCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRateCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF3441828F3CD8400D6770F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CF3441A28F3CD8400D6770F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6CF3441F28F3CD8400D6770F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CF3442128F3CD8500D6770F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CF3442428F3CD8500D6770F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CF3442628F3CD8500D6770F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C112B94C0448AA46AE4DAD74 /* Pods-ExchangeRateCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRateCalculator.release.xcconfig"; path = "Target Support Files/Pods-ExchangeRateCalculator/Pods-ExchangeRateCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		E6744CC45C92ED8F5CA011DC /* Pods_ExchangeRateCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeRateCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CF3441228F3CD8400D6770F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A433A68E64F80BCE9F456170 /* Pods_ExchangeRateCalculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23A10059AC4FA4BB513E9A62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6744CC45C92ED8F5CA011DC /* Pods_ExchangeRateCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C38284628F5201F00BC303C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6CAAF66728F708C500069B24 /* exchange.png */,
+				6CAAF65C28F708C500069B24 /* AED.png */,
+				6CAAF65228F708C500069B24 /* ATS.png */,
+				6CAAF66528F708C500069B24 /* AUD.png */,
+				6CAAF65D28F708C500069B24 /* BEF.png */,
+				6CAAF65728F708C500069B24 /* BHD.png */,
+				6CAAF65028F708C500069B24 /* BND.png */,
+				6CAAF65928F708C500069B24 /* CAD.png */,
+				6CAAF65B28F708C500069B24 /* CHF.png */,
+				6CAAF65E28F708C500069B24 /* CNH.png */,
+				6CAAF65F28F708C500069B24 /* DKK.png */,
+				6CAAF65A28F708C500069B24 /* DM.png */,
+				6CAAF66828F708C500069B24 /* ECOWAS.png */,
+				6CAAF66428F708C500069B24 /* ESP.png */,
+				6CAAF65328F708C500069B24 /* EUR.png */,
+				6CAAF65828F708C500069B24 /* FIM.png */,
+				6CAAF65128F708C500069B24 /* FRF.png */,
+				6CAAF66328F708C500069B24 /* GBP.png */,
+				6CAAF64D28F708C500069B24 /* HKD.png */,
+				6CAAF65628F708C500069B24 /* IDR.png */,
+				6CAAF66128F708C500069B24 /* ITL.png */,
+				6CAAF65528F708C500069B24 /* JPY.png */,
+				6CAAF66A28F708C500069B24 /* KRW.png */,
+				6CAAF66928F708C500069B24 /* KWD.png */,
+				6CAAF64C28F708C500069B24 /* MYR.png */,
+				6CAAF64B28F708C500069B24 /* NLG.png */,
+				6CAAF64F28F708C500069B24 /* NOK.png */,
+				6CAAF66228F708C500069B24 /* NZD.png */,
+				6CAAF65428F708C500069B24 /* SAR.png */,
+				6CAAF64E28F708C500069B24 /* SEK.png */,
+				6CAAF66628F708C500069B24 /* SGD.png */,
+				6CAAF66028F708C500069B24 /* THB.png */,
+				6CAAF66B28F708C500069B24 /* USD.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6CF3440C28F3CD8400D6770F = {
+			isa = PBXGroup;
+			children = (
+				6CF3441728F3CD8400D6770F /* ExchangeRateCalculator */,
+				6CF3441628F3CD8400D6770F /* Products */,
+				AF9B6E065B2FAC97DF3A2AA1 /* Pods */,
+				23A10059AC4FA4BB513E9A62 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6CF3441628F3CD8400D6770F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CF3441528F3CD8400D6770F /* ExchangeRateCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CF3441728F3CD8400D6770F /* ExchangeRateCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				6C38284628F5201F00BC303C /* Resources */,
+				6CF3442F28F3CE3F00D6770F /* Models */,
+				6CF3443028F3CE4C00D6770F /* Services */,
+				6CF3442E28F3CE3300D6770F /* ViewModels */,
+				6CF3442D28F3CE2900D6770F /* Cells */,
+				6CF3442C28F3CE2000D6770F /* Controllers */,
+				6CF3441828F3CD8400D6770F /* AppDelegate.swift */,
+				6CF3441A28F3CD8400D6770F /* SceneDelegate.swift */,
+				6CF3441E28F3CD8400D6770F /* Main.storyboard */,
+				6CF3442128F3CD8500D6770F /* Assets.xcassets */,
+				6CF3442328F3CD8500D6770F /* LaunchScreen.storyboard */,
+				6CF3442628F3CD8500D6770F /* Info.plist */,
+			);
+			path = ExchangeRateCalculator;
+			sourceTree = "<group>";
+		};
+		6CF3442C28F3CE2000D6770F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C38284D28F52D1B00BC303C /* MoneyListTableViewController.swift */,
+				6CAAF68D28F70A1500069B24 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6CF3442D28F3CE2900D6770F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6C38284F28F52D9200BC303C /* MoneyTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6CF3442E28F3CE3300D6770F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6C38284B28F52B0200BC303C /* MoneyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6CF3442F28F3CE3F00D6770F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6C38284728F5283000BC303C /* Money.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6CF3443028F3CE4C00D6770F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6C38284928F5299700BC303C /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF9B6E065B2FAC97DF3A2AA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B0D39C1C58C950FFAA0223D /* Pods-ExchangeRateCalculator.debug.xcconfig */,
+				C112B94C0448AA46AE4DAD74 /* Pods-ExchangeRateCalculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CF3441428F3CD8400D6770F /* ExchangeRateCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF3442928F3CD8500D6770F /* Build configuration list for PBXNativeTarget "ExchangeRateCalculator" */;
+			buildPhases = (
+				61603E738ECC609444A7DF6C /* [CP] Check Pods Manifest.lock */,
+				6CF3441128F3CD8400D6770F /* Sources */,
+				6CF3441228F3CD8400D6770F /* Frameworks */,
+				6CF3441328F3CD8400D6770F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExchangeRateCalculator;
+			productName = ExchangeRateCalculator;
+			productReference = 6CF3441528F3CD8400D6770F /* ExchangeRateCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CF3440D28F3CD8400D6770F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					6CF3441428F3CD8400D6770F = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 6CF3441028F3CD8400D6770F /* Build configuration list for PBXProject "ExchangeRateCalculator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = 6CF3440C28F3CD8400D6770F;
+			productRefGroup = 6CF3441628F3CD8400D6770F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CF3441428F3CD8400D6770F /* ExchangeRateCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CF3441328F3CD8400D6770F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAAF68728F708C500069B24 /* SGD.png in Resources */,
+				6CAAF67D28F708C500069B24 /* AED.png in Resources */,
+				6CAAF68828F708C500069B24 /* exchange.png in Resources */,
+				6CAAF67A28F708C500069B24 /* CAD.png in Resources */,
+				6CF3442528F3CD8500D6770F /* LaunchScreen.storyboard in Resources */,
+				6CAAF68328F708C500069B24 /* NZD.png in Resources */,
+				6CAAF68228F708C500069B24 /* ITL.png in Resources */,
+				6CF3442228F3CD8500D6770F /* Assets.xcassets in Resources */,
+				6CAAF67B28F708C500069B24 /* DM.png in Resources */,
+				6CAAF68528F708C500069B24 /* ESP.png in Resources */,
+				6CAAF68428F708C500069B24 /* GBP.png in Resources */,
+				6CAAF67228F708C500069B24 /* FRF.png in Resources */,
+				6CAAF67028F708C500069B24 /* NOK.png in Resources */,
+				6CAAF67928F708C500069B24 /* FIM.png in Resources */,
+				6CAAF67128F708C500069B24 /* BND.png in Resources */,
+				6CF3442028F3CD8400D6770F /* Main.storyboard in Resources */,
+				6CAAF67728F708C500069B24 /* IDR.png in Resources */,
+				6CAAF67428F708C500069B24 /* EUR.png in Resources */,
+				6CAAF68C28F708C500069B24 /* USD.png in Resources */,
+				6CAAF68028F708C500069B24 /* DKK.png in Resources */,
+				6CAAF67828F708C500069B24 /* BHD.png in Resources */,
+				6CAAF68628F708C500069B24 /* AUD.png in Resources */,
+				6CAAF67628F708C500069B24 /* JPY.png in Resources */,
+				6CAAF68A28F708C500069B24 /* KWD.png in Resources */,
+				6CAAF66E28F708C500069B24 /* HKD.png in Resources */,
+				6CAAF67E28F708C500069B24 /* BEF.png in Resources */,
+				6CAAF66D28F708C500069B24 /* MYR.png in Resources */,
+				6CAAF68928F708C500069B24 /* ECOWAS.png in Resources */,
+				6CAAF67328F708C500069B24 /* ATS.png in Resources */,
+				6CAAF66F28F708C500069B24 /* SEK.png in Resources */,
+				6CAAF68128F708C500069B24 /* THB.png in Resources */,
+				6CAAF68B28F708C500069B24 /* KRW.png in Resources */,
+				6CAAF67F28F708C500069B24 /* CNH.png in Resources */,
+				6CAAF66C28F708C500069B24 /* NLG.png in Resources */,
+				6CAAF67528F708C500069B24 /* SAR.png in Resources */,
+				6CAAF67C28F708C500069B24 /* CHF.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61603E738ECC609444A7DF6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExchangeRateCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CF3441128F3CD8400D6770F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C38284E28F52D1B00BC303C /* MoneyListTableViewController.swift in Sources */,
+				6C38284C28F52B0200BC303C /* MoneyViewModel.swift in Sources */,
+				6CF3441928F3CD8400D6770F /* AppDelegate.swift in Sources */,
+				6C38284828F5283000BC303C /* Money.swift in Sources */,
+				6C38284A28F5299700BC303C /* WebService.swift in Sources */,
+				6CAAF68E28F70A1500069B24 /* MainViewController.swift in Sources */,
+				6C38285028F52D9200BC303C /* MoneyTableViewCell.swift in Sources */,
+				6CF3441B28F3CD8400D6770F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6CF3441E28F3CD8400D6770F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CF3441F28F3CD8400D6770F /* Base */,
+				6C4E49E528F8609B00429FA6 /* ko */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CF3442328F3CD8500D6770F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CF3442428F3CD8500D6770F /* Base */,
+				6C4E49E628F8609B00429FA6 /* ko */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CF3442728F3CD8500D6770F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CF3442828F3CD8500D6770F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CF3442A28F3CD8500D6770F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B0D39C1C58C950FFAA0223D /* Pods-ExchangeRateCalculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N94PZ8R58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExchangeRateCalculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "통화로";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.xoul.kimkhuna.ExchangeRateCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CF3442B28F3CD8500D6770F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C112B94C0448AA46AE4DAD74 /* Pods-ExchangeRateCalculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N94PZ8R58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExchangeRateCalculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "통화로";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.xoul.kimkhuna.ExchangeRateCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CF3441028F3CD8400D6770F /* Build configuration list for PBXProject "ExchangeRateCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF3442728F3CD8500D6770F /* Debug */,
+				6CF3442828F3CD8500D6770F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF3442928F3CD8500D6770F /* Build configuration list for PBXNativeTarget "ExchangeRateCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF3442A28F3CD8500D6770F /* Debug */,
+				6CF3442B28F3CD8500D6770F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CF3440D28F3CD8400D6770F /* Project object */;
+}

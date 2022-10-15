@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "country"; ObjectID = "9Df-kX-r4q"; */
+"9Df-kX-r4q.text" = "country";
+
+/* Class = "UILabel"; text = "한국 원 "; ObjectID = "JgC-tj-laE"; */
+"JgC-tj-laE.text" = "한국 원 ";
+
+/* Class = "UIButton"; configuration.title = "국가선택"; ObjectID = "Udf-Rs-Jsd"; */
+"Udf-Rs-Jsd.configuration.title" = "국가선택";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Udf-Rs-Jsd"; */
+"Udf-Rs-Jsd.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "unit"; ObjectID = "bIc-lO-lPq"; */
+"bIc-lO-lPq.text" = "unit";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jRa-W4-GCP"; */
+"jRa-W4-GCP.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "basePrice"; ObjectID = "wuE-Rf-SzC"; */
+"wuE-Rf-SzC.text" = "basePrice";
