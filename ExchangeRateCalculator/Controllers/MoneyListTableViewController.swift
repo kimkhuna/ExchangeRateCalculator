@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol MoneyListDelegate: AnyObject{
+    func getData(country: String, base: String, unit: String)
+}
+
 class MoneyListTableViewController: UITableViewController{
     
     
@@ -14,6 +18,7 @@ class MoneyListTableViewController: UITableViewController{
     
     private var moneyListVM: MoneyListViewModel!
     
+    weak var delegate: MoneyListDelegate?
     
 
     override func viewDidLoad() {
@@ -22,14 +27,30 @@ class MoneyListTableViewController: UITableViewController{
         setup()
         
     }
-    
-    
-        private func setup(){
+
+    private func setup(){
+
+        let cal = Calendar.current
+        var now = Date()
+        let weekday = cal.component(.weekday, from: now)
+        let hours = cal.component(.hour, from: now)
         
-        let url = URL(string: "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=your_Key&data=AP01")!
-        WebService().getMoney(url: url){
-            (money) in
-            
+        if(weekday == 1){
+            now = cal.date(byAdding: .day, value: -2, to: now)!
+        }else if(weekday == 7 || hours <= 11){
+            now = cal.date(byAdding: .day,value: -1, to: now)!
+        }
+    
+        
+        let formatter = DateFormatter()
+        let today = formatter.dateFormat = "yyyyMMdd"
+        var current_string = formatter.string(from: now)
+        
+
+    let url = URL(string: "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=y6rBjV1m8HoXso6APfx7F2BWAWLA89Up&data=AP01&searchdate=\(current_string)&data=AP01")!
+    WebService().getMoney(url: url){
+        (money) in
+        
             if let money = money{
                 self.moneyListVM = MoneyListViewModel(moneys: money)
             }
@@ -38,6 +59,7 @@ class MoneyListTableViewController: UITableViewController{
             }
         }
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.moneyListVM.numberOfRowsInSection(section)
@@ -154,7 +176,7 @@ class MoneyListTableViewController: UITableViewController{
             cell.countryImgView!.image = UIImage(named: "SEK.png")
         }
         else{
-            cell.countryImgView!.image = UIImage(named: "")
+//            cell.countryImgView!.image = UIImage(named: "")
         }
         
         return cell
@@ -173,8 +195,9 @@ class MoneyListTableViewController: UITableViewController{
                 let moneyVM = self.moneyListVM.moneyAtIndex(index)
                 mainVC.country = moneyVM.country!
                 mainVC.basePrice = moneyVM.basePrice!
+                mainVC.unit = moneyVM.unit!
             }
         }
     }
-    
+
 }

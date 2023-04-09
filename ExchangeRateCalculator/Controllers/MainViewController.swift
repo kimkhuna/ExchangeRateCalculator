@@ -8,6 +8,8 @@
 import UIKit
 
 class MainViewController: UIViewController {
+
+    
     
     @IBOutlet weak var countryImgView1: UIImageView!
     @IBOutlet weak var countryImgView2: UIImageView!
@@ -19,24 +21,36 @@ class MainViewController: UIViewController {
     
     var country: String = ""
     var basePrice: String = ""
+    var unit: String = ""
 //    var timer:Timer!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+ 
+      
         countryLabel2.text! = country
-        
         getCountryImg2()
-        
+
 //        timer = Timer.scheduledTimer(timeInterval: 1, target:self, selector:#selector(timerProc),userInfo:nil, repeats: true)
         
-    
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        
         self.navigationController?.navigationBar.isHidden = true
+        
+//        countryLabel2.text?.append("  (\(unit))")
+       
+
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+
+         self.view.endEditing(true)
+
+   }
     
   
 //    @objc func timerProc(timer:Timer){
@@ -51,6 +65,28 @@ class MainViewController: UIViewController {
 //
 //        }
     
+    
+    @IBAction func switchCellBtn(_ sender: UIButton) {
+        
+        var tmpImage1: UIImage?
+        var tmpImage2: UIImage?
+        
+        var tmpLabel1: String?
+        var tmpLabel2: String?
+        
+        self.countryImgView1.image = tmpImage1
+        self.countryImgView2.image = tmpImage2
+        
+
+        
+        
+        
+        
+    }
+    
+    
+    
+    
     @IBAction func exchangeBtn(_ sender: UIButton) {
         
         let money:String = moneytextField1.text!
@@ -64,11 +100,8 @@ class MainViewController: UIViewController {
         
         moneytextField2.text! = String(format: "%.2f", result)
     }
-    
-    @IBAction func selectBtn(_ sender: UIButton) {
-    }
-    
-    
+
+
     func getCountryImg2(){
         if countryLabel2.text == "아랍에미리트 디르함"{
             countryImgView2!.image = UIImage(named: "AED.png")
@@ -89,7 +122,7 @@ class MainViewController: UIViewController {
             countryImgView2!.image = UIImage(named: "CAD.png")
         }
         else if countryLabel2.text == "스위스 프랑"{
-            countryImgView1!.image = UIImage(named: "CHF.png")
+            countryImgView2!.image = UIImage(named: "CHF.png")
         }
         else if countryLabel2.text == "위안화"{
             countryImgView2!.image = UIImage(named: "CNH.png")
@@ -164,10 +197,15 @@ class MainViewController: UIViewController {
         else if countryLabel2.text == "스웨덴 크로나"{
             countryImgView2!.image = UIImage(named: "SEK.png")
         }
+        else if countryLabel2.text == "브루나이 달러"{
+            countryImgView2!.image = UIImage(named: "BND.png")
+        }
         else{
-            countryImgView2!.image = UIImage(named: "")
+//            countryImgView2!.image = UIImage(named: "")
         }
     }
     
+    
+
     
 }
